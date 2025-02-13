@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First number: "
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_a"
+        android:layout_margin="20dp"
+        android:hint="Enter a "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second number: "
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_b"
+        android:layout_margin="20dp"
+        android:hint="Enter b "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:layout_margin="4dp"
+            android:text="+"
+            app:cornerRadius="8dp"
+            app:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_subtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="4dp"
+            app:cornerRadius="8dp"
+            app:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_multiplication"
+            android:layout_margin="4dp"
+            android:text="*"
+            app:cornerRadius="8dp"
+            app:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_division"
+            android:layout_margin="4dp"
+            app:cornerRadius="8dp"
+            app:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:text="/"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result "
+        android:textSize="24sp"
+        android:layout_margin="20dp"
+        android:id="@+id/result_tv"
+        android:gravity="center"/>
+
+</LinearLayout>
